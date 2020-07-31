@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>yelp camp</title>
+		
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+	<body>
+
+
+<h1>THIS IS THE SHOW TEMPLATE!</h1>
+<p><%= campground.name %></p> 
+
+<img src= "<%= campground.image %>" >
+<p><%= campground.description %></p>
+<p>
+	aman pawha
+</p>
+<% campground.comments.forEach(function(comment){ %>
+		<p>
+				<strong><%= comment.author %></strong> - <%= comment.text %>
+	</p>
+<% }); %>
+</body>
+</html>
